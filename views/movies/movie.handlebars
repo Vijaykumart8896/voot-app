@@ -1,0 +1,23 @@
+
+<section id="getSingleMovie">
+    <article>
+        <aside class="left">
+            <div>
+                <h1>{{movie.movie_tiitle}}</h1>
+                <p class="line">{{movie.movie_duration}}  | {{movie.movie_language}}  | {{movie.movie_genre}} | {{movie.movie_year}} <br>
+                    {{movie.movie_certification}}  | {{movie.movie_category}}
+                </p>
+                <p class="p">{{movie.movie_description}}</p>
+                <span>Audio : {{movie.movie_audio_language}}</span><br>
+                <a class="watch" href="#play">Watch Now</a>
+            </div>
+        </aside>
+        <aside class="right">
+            <figure>
+                <img src="{{trimString movie.movie_img.0.path}}" alt="">
+            </figure>
+        </aside>
+    </article>
+</section>
+<video class="handleback" src="{{trimString movie.movie_video.0.path}}" autoplay loop playsinline muted></video>
+<video class="play" src="{{trimString movie.movie_video.0.path}}"  controls></video>

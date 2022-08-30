@@ -1,0 +1,46 @@
+<section id="movie_section">
+  <article>
+    <h1>Add Movies</h1>
+    <form action="/movies/create-movie" method="post" enctype="multipart/form-data">
+      <div class="movie_block">
+        <input  type="text" id="movie_tiitle" name="movie_tiitle" class="form_control" placeholder="movie tiitle"/>
+      </div>
+      <div class="movie_block">
+        <input type="text" id="movie_duration" name="movie_duration" class="form_control" placeholder="movie duration"/>
+      </div>
+      <div class="movie_block">
+        <input type="text" id="movie_language" name="movie_language" class="form_control" placeholder="movie language"/>
+      </div>
+      <div class="movie_block">
+        <input type="text" id="movie_genre" name="movie_genre" class="form_control" placeholder="movie genre"/>
+      </div>
+      <div class="movie_block">
+        <input type="text" id="movie_year" name="movie_year" class="form_control" placeholder="movie year"/>
+      </div>
+      <div class="movie_block">
+        <input type="text" id="movie_certification" name="movie_certification" class="form_control" placeholder="movie certification"/>
+      </div>
+      <div class="movie_block">
+        <input type="text" id="movie_audio_language" name="movie_audio_language" class="form_control" placeholder="movie audio language"/>
+      </div>
+      <div class="movie_block">
+        <label for="movie_img">Movie Image</label>
+        <input type="file" name="movie_img" id="movie_img"class="form_control"/>
+      </div>
+      <div class="movie_block">
+        <label for="movie_video">Movie Video</label>
+        <input type="file" name="movie_video" id="movie_video" class="form_control"/>
+      </div>
+      <div class="movie_block">
+        <input type="text" name="movie_category" id="movie_category" class="form_control" placeholder="movie category"/>
+      </div>
+      <div>
+        
+        <textarea name="movie_description" placeholder="movie description" cols="30" rows="10"></textarea>
+      </div>
+      <div class="movie_block">
+        <button class="addMovie">ADD MOVIE</button>
+      </div>
+    </form>
+  </article>
+</section>

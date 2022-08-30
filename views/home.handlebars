@@ -1,0 +1,15 @@
+<section id="getAllMovies">
+  {{#each moviesss}}
+    <article>
+      <aside>
+        <figure>
+          <a href="{{_id}}"><img
+              src="{{trimString movie_img.0.path}}"
+              alt="{{movie_tiitle}}"
+            /></a>
+          <p>{{movie_tiitle}}</p>
+        </figure>
+      </aside>
+    </article>
+  {{/each}}
+</section>

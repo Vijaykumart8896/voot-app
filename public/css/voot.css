@@ -1,0 +1,359 @@
+:root {
+  --base-color: #0d0620;
+  --border-color: #7f0dff;
+}
+body {
+  background: #0d0620;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+.logoBlock > a {
+  fill: #fff;
+}
+.logoBlock .upgrade-btn {
+  width: auto;
+  color: #000000;
+  height: 30px;
+  font-size: 12px;
+  object-fit: contain;
+  text-align: center;
+  font-style: normal;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 10px;
+  border-radius: 2px;
+  letter-spacing: normal;
+  text-transform: none;
+  text-decoration: none;
+  background-color: #29d4b6;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#vootnavbar {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  top: 0;
+  z-index: 1111;
+  background-color: var(--base-color);
+}
+
+#vootnavbar > article {
+  width: 90%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#vootnavbar > article > .logoBlock {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+#vootnavbar > article > .menuBlock {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#vootnavbar > article > .menuBlock ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+#vootnavbar > article > .menuBlock ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.693);
+  font-size: 16px;
+}
+#vootnavbar > article > .menuBlock ul li a:hover {
+  color: #fff;
+}
+#searchM{
+  background: transparent;
+  border: 1px solid var(--border-color);
+  outline: none;
+  padding: 8px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* TODO:  SLIDER PART FOR CREATE MOVIES STARTS HERE */
+#movie_section {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#movie_section > article {
+  width: 30%;
+  height: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px #0d0620;
+}
+#movie_section > article > form {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+#movie_section > article > form > div {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#movie_section > article > form > div input {
+  width: 70%;
+  padding: 7px;
+  background-color: rgba(238, 85, 238, 0.28);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.611);
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+}
+#movie_section > article > form > div label {
+  transform: translateX(-80px);
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+#movie_section > article > form > div button {
+  width: 70%;
+  padding: 7px;
+  background-color: green;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+#movie_section > article > form > div textarea {
+  width: 72%;
+  background-color: rgba(238, 85, 238, 0.28);
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  resize: none;
+}
+/* TODO:  SLIDER PART FOR CREATE MOVIES ENDS HERE */
+
+/* FIXME: GET SINGLE MOVIE BLOCK STARTS HERE */
+.handleback{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+#getSingleMovie {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#getSingleMovie > article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(8,7,10, 0.5), rgba(9,8,8,0.8));
+  position: relative;
+  top: 0;
+  z-index: 11;
+
+}
+#getSingleMovie > article .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+#getSingleMovie > article .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#getSingleMovie > article .right figure img{
+  width: 330px;
+  height: 440px;
+  border-radius: 3px;
+
+}
+#getSingleMovie > article .left div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px;
+}
+
+#getSingleMovie > article .left div h1 {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+}
+#getSingleMovie > article .left div .line{
+  line-height: 40px;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+#getSingleMovie > article .left div .p{
+  text-transform: lowercase;
+  line-height: 25px;
+}
+
+
+#getSingleMovie > article .left  a {
+  display: inline-block;
+  text-decoration: none;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  background-image: linear-gradient(254deg, rgb(89, 9, 179), rgb(127, 13, 255));
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.play{
+  display: none;
+  object-fit: cover;
+ 
+}
+/* FIXME: GET SINGLE MOVIE BLOCK ENDS HERE */
+
+
+
+/* TODO: ----ALL GET MOVIES PART STARTS HERE */
+#heading{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+#getAllMovies{
+  width: 90%;
+  min-height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  margin: 0 auto;
+  margin-left: 30px;
+}
+#getAllMovies > article > aside > figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+
+
+}
+#getAllMovies > article > aside > figure > a > img{
+  width: 95%;
+  height: 350px;
+  border-radius: 5px;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+#getAllMovies > article > aside > figure > a > img:hover{
+  transform: scale(1.1);
+}
+
+/* TODO: ----ALL GET MOVIES PART ENDS HERE */
+
+
+/* FIXME: home part starts here */
+#homeBlock{
+  width: 100%;
+height: 70vh;
+
+}
+#homeBlock > marquee > img{
+  width: 300x;
+  height: 400px;
+  border-radius: 3px;
+}
+
+/* FIXME: home part ends here */
+
+
+
+/* !messages */
+.alert{
+  width: 300px;
+  height:50px ;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+.alert-success{
+  background-color: lightgreen;
+  border: 1px solid green;
+  color: green;
+}
+.alert danger{
+  background-color: rgba(207, 107, 107, 0.704);
+  border: 1px solid red;
+  color: red;
+}
+.alert info{
+  background-color: rgba(156, 173, 227, 0.563);
+  border: 1px solid royalblue;
+  color: royalblue;
+}
